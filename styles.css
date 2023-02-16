@@ -127,3 +127,13 @@ header {
     from, to { border-color: transparent }
     50% { border-color: #D37E30; }
 }
+
+@media only screen and (max-width: 768px) {
+    .section-hero .section-title {
+        font-size: 5rem !important;
+    }
+
+    .section-hero .section-body {
+        padding: 40rem 0rem 25rem 0rem;
+    }
+}
