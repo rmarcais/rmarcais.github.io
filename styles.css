@@ -8,6 +8,7 @@
     --font-size-md: 1.6rem;
     --font-size-lg: 1.8rem;
     --font-size-x-lg: 3.2rem;
+    --sectio-hero-body-padding: 50rem 0rem 30rem 0rem;
 }
 
 /* Base
@@ -15,6 +16,10 @@
 html {
  scroll-behavior: smooth;
  font-size: 62.5%;
+}
+
+.span-orange {
+    color: #D37E30;
 }
 
 .f-x-small {
@@ -38,7 +43,7 @@ html {
 }
 
 .f-xx-large {
-   font-size: 4.4rem;
+   font-size: 9.6rem;
 }
 
 /* Header
@@ -71,53 +76,6 @@ header {
     width: calc(100% - 1rem);
 }
 
-header .menu-icon .navicon {
-    background: white;
-    display: block;
-    width: 1.3rem;
-    height: .2rem;
-    position: relative;
-    transition: background .2s ease-out;
-}
-header .menu-icon .navicon::after, header .menu-icon .navicon::before {
-  content: "";
-  display: block;
-  width: 2rem;
-  height: 100%;
-  position: absolute;
-  background: white;
-  transition: all .2s ease-out;
-}
-
-header .menu-icon .navicon::after {
-  top: -.7rem;
-}
-
-header .menu-icon .navicon::before {
-  top: .7rem;
-}
-
-header .menu-btn {
-  display: none;
-}
-
-header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-header .menu-btn:checked ~ .menu-icon .navicon::before {
-  transform: rotate(-45deg);
-}
-
-header .menu-btn:checked ~ .menu-icon .navicon::after {
-  transform: rotate(45deg);
-  top: 0px;
-}
-
-header .menu-btn:checked ~ .menu-icon .navicon::before, .header .menu-btn:checked ~ .menu-icon .navicon::after {
-  top: 0;
-}
-
 @media only screen and (min-width: 576px) {
     .navbar-nav {
         display: flex !important;
@@ -126,6 +84,46 @@ header .menu-btn:checked ~ .menu-icon .navicon::before, .header .menu-btn:checke
 
 @media only screen and (max-width: 576px) {
     header .logo {
-        margin-top: -2rem;
+        margin-top: -4rem;
     }
+}
+
+/* Section Hero
+============================= */
+
+.section-hero {
+    background: url(./images/header.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -25rem;
+   }
+
+.section-hero .section-body {
+    padding: var(--sectio-hero-body-padding);
+}
+
+.typewriter {
+    width: fit-content;
+    margin: auto;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .10em solid #D37E30;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+      typing 2.5s steps(20, end),
+      blink-caret .65s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #D37E30; }
 }
