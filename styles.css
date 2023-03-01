@@ -79,12 +79,12 @@ header {
     cursor: pointer;
 }
 
-.nav-link {
+.nav-link, .experience-link {
     text-decoration: none;
     position: relative;
 }
 
-.nav-link::before {
+.nav-link::before, .experience-link::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -258,7 +258,7 @@ header {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
 }
 
 .section-skills .carousel-item {
@@ -269,4 +269,61 @@ header {
     .section-skills .carousel-item {
         padding: 0 7rem;
     }
+}
+
+/* Section Experiences
+============================= */
+
+.section-experiences .section-body {
+    animation: blur-anim 0.3s linear forwards;
+	filter: blur(100px);
+}
+
+@keyframes blur-anim {
+	100% {	filter: blur(0px) };
+}
+
+.section-experiences .btn.btn-primary {
+    background-color: #D37E30;
+    border: solid #D37E30;
+    border-radius: 0;
+    font-size: var(--font-size-md);
+    padding: 1rem 3rem;
+}
+
+.section-experiences .btn.btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.section-experiences .btn.btn-primary:active, .section-experiences .btn.btn-primary:hover {
+    background-color: white !important;
+    color: #D37E30 !important;
+    border: solid #D37E30 !important;
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+.section-experiences .btn.btn-primary:active {
+    transform: scale(1);
+    transition: 0.1s ease-in-out;
+}
+
+.section-experiences .btn.btn-primary.active-btn {
+    transform: translateY(-1rem), scale(1.1);;
+    box-shadow: 5px 5px 5px rgb(98, 93, 93);
+    background-color: white !important;
+    color: #D37E30 !important;
+    border: solid #D37E30 !important;
+}
+
+.section-experiences .btn.btn-primary.active-btn:focus {
+    box-shadow: 5px 5px 5px rgb(98, 93, 93) !important;
+}
+
+.experience-link::before {
+    left: 0;
+}
+
+.experience-link:hover::before {
+    width: 100%;
 }
