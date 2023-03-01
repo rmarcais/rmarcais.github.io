@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title>Resume Rémi Marçais</title>
         <meta name="description" content="Implement a design with bootstrap">
-        <link rel="icon" href="./images/logo_elephant.png">
+        <link rel="icon" href="./images/bear.png">
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="./style.css">
 
@@ -33,19 +33,19 @@
                 <nav class="navbar navbar-expand-sm col-sm justify-content-center justify-content-sm-center p-0">
                     <ul class="navbar-nav text-center collapse font-weight-bold" id="menu">
                         <li class="nav-item px-sm-4 mx-sm-3">
-                            <a href="#about-me" class="nav-link text-white">About me</a>
+                            <a href="#about-me" class="nav-link text-white pl-0">About me</a>
                         </li>
                         <li class="nav-item px-sm-4 mx-sm-3">
-                            <a href="#" class="nav-link text-white">Pojects and skills</a>
+                            <a href="#projecs_and_skills" class="nav-link text-white">Pojects and skills</a>
                         </li>
-                        <li class="nav-item pl-sm-4 pr-sm-2 ml-sm-3">
+                        <li class="nav-item px-sm-4 mx-sm-3">
                             <a href="#" class="nav-link text-white">Experiences</a>
                         </li>
                         <li class="nav-item px-sm-4 mx-sm-3">
                             <a href="#" class="nav-link text-white">Hobbies</a>
                         </li>
-                        <li class="nav-item pl-sm-4 pr-sm-2 ml-sm-3">
-                            <a href="#" class="nav-link text-white">Social medias</a>
+                        <li class="nav-item px-sm-4 ml-sm-3 pr-0">
+                            <a href="#" class="nav-link text-white">Contact me</a>
                         </li>
                     </ul>
                 </nav>
@@ -78,7 +78,7 @@
                                 <div class="col-sm-3 offset-sm-1 f-medium my-5 my-sm-0">
                                     <img src="./images/profile.png" alt="profile pic">
                                     <div class="border-dark border-bottom bordered mx-auto mb-4 mt-5">
-                                        <p class="f-large hover-scale"><a href="https://www.linkedin.com/in/remi-marcais/">Rémi Marçais</a></p>
+                                        <p class="f-large"><a href="https://www.linkedin.com/in/remi-marcais/" target="_blank" class="nav-link px-2">Rémi Marçais</a></p>
                                         <p>19 yo</p>
                                     </div>
                                     <div class="bordered mx-auto mt-4">
@@ -88,7 +88,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 offset-sm-1 align-self-center mt-5 mt-sm-0">
+                                <div class="col-sm-6 offset-sm-1 align-self-center mt-5 mt-sm-0 px-sm-0 px-5">
                                     <blockquote>
                                         <p class="text-justify f-medium">"Hi ! I’m Rémi and I’m currently a student at Holberton School France,  a <span class="span-orange">computer sciences school</span>. I  am always searching for <span class="span-orange">stimulating</span> and <span class="span-orange">exciting</span> projects that allow me to develop my <span class="span-orange">skills</span>. In the meantime, I invite you to discover my <span class="span-orange">experiences</span>, <span class="span-orange">projects</span>, and <span class="span-orange">hobbies</span> in my online <span class="span-orange">resume</span> ! Enjoy !"</p>
                                     </blockquote>
@@ -96,6 +96,280 @@
                             </div>
                         </section>
                     </section>
+                </div>
+            </section>
+            <!-- Projects section -->
+            <section class="section section-projects text-center text-white font-weight-bold" id="projecs_and_skills">
+                <div class="container-md py-5">
+                    <h2 class="section-title font-weight-bold f-x-large mb-5 pb-5">Projects and <span class="span-brown">skills</span></h2>
+                    <div id="carouselProjects" data-ride="carousel" class="carousel slide pt-5">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center pb-5">
+                                    <div class="col-md-3 align-self-center p-0">
+                                        <img src="./images/airbnb.png" width="170px" alt="airbnb logo">
+                                    </div>
+                                    <div class="col-md-6 text-justify pr-sm-5 px-5 mr-lg-5 mt-5 mt-md-0">
+                                        <h4 class="f-large font-weight-bold py-3"><a href="https://github.com/rmarcais/AirBnB_clone_v4" target="_blank" class="project-title pb-2">AirBnB clone</a></h4>
+                                        <p class="f-medium">
+                                            The goal of this project was to deploy on our own server a simple copy of the AirBnB website.
+                                            After 4 weeks, we had a complete web application composed by: a console to manipulate data, a website (front-end),
+                                            a database and an API. <em>(click on the title to see the code)</em>
+                                        </p>
+                                    </div>
+                                </div> 
+                                <div class="row justify-content-center font-weight-bold f-medium mt-3 infos-project p-sm-0 px-5">
+                                    <div class="col-sm-3 mr-4 mb-3">
+                                        <p>Languages: <span class="span-brown">Python, Javascript, SQL, HTML, CSS</span></p>
+                                    </div>
+                                    <div class="col-sm-3 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg pr-lg-2 p-0 text-right complexity">
+                                                <p>Complexity:</p>
+                                            </div>
+                                            <div class="col-lg p-0 text-left complexity">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_off.png" alt="star off">
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-sm-3 mt-3 mt-sm-0">
+                                        <p>Duration: <span class="span-brown">4 weeks</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-center pb-5">
+                                    <div class="col-md-3 align-self-center p-0 logo">
+                                        <img src="./images/shell.png" width="170px" alt="shell logo">
+                                    </div>
+                                    <div class="col-md-6 text-justify pr-sm-5 px-5 mr-lg-5 mt-5 mt-md-0">
+                                        <h4 class="f-large font-weight-bold py-3"><a href="https://github.com/rmarcais/simple_shell" target="_blank" class="project-title pb-2">Simple shell</a></h4>
+                                        <p class="f-medium">
+                                            For this project, we had to create a simple version of a Unix shell using the C language. It's a command line interpreter
+                                            that provides a command line user interface for Unix-like operating system. <em>(click on the title to see the code)</em>
+                                        </p>
+                                    </div>
+                                </div> 
+                                <div class="row justify-content-center font-weight-bold f-medium mt-3 infos-project p-sm-0 px-5">
+                                    <div class="col-sm-3 mr-4 mb-3">
+                                        <p>Language: <span class="span-brown">C</span></p>
+                                    </div>
+                                    <div class="col-sm-3 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg pr-lg-2 p-0 text-right complexity">
+                                                <p>Complexity:</p>
+                                            </div>
+                                            <div class="col-lg p-0 text-left complexity">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_off.png" alt="star on">
+                                                <img src="./images/star_off.png" alt="star off">
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-sm-3 mt-3 mt-sm-0">
+                                        <p>Duration: <span class="span-brown">2 weeks</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-center pb-5">
+                                    <div class="col-md-3 align-self-center p-0 logo my-5">
+                                        <img src="./images/logomotiv.png" width="190px" alt="motiv logo" class="rounded">
+                                    </div>
+                                    <div class="col-md-6 text-justify pr-sm-5 px-5 mr-lg-5 mt-5 mt-md-0">
+                                        <h4 class="f-large font-weight-bold py-3"><a href="https://github.com/rmarcais/Portfolio_project_Motiv" target="_blank" class="project-title pb-2">Motiv'</a></h4>
+                                        <p class="f-medium">
+                                            This project was the last project of the fundamental year at Holberton school. We had to create, from scratch, a product, whatever the theme.
+                                            We had to do all parts, like a real start-up (landing page, MVP, demo...). You can discover my application by clicking on the title ! ;)
+                                        </p>
+                                    </div>
+                                </div> 
+                                <div class="row justify-content-center font-weight-bold f-medium infos-project p-sm-0 px-5">
+                                    <div class="col-sm-3 mr-4 mb-3">
+                                        <p>Languages: <span class="span-brown">Python, Javascript, SQL, HTML, CSS</span></p>
+                                    </div>
+                                    <div class="col-sm-3 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg pr-lg-2 p-0 text-right complexity">
+                                                <p>Complexity:</p>
+                                            </div>
+                                            <div class="col-lg p-0 text-left complexity">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_off.png" alt="star off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 mt-3 mt-sm-0">
+                                        <p>Duration: <span class="span-brown">4 weeks</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row justify-content-center pb-5">
+                                    <div class="col-md-3 align-self-center p-0 logo mb-4">
+                                        <img src="./images/smile_off.png" width="170px" alt="smilling school logo">
+                                    </div>
+                                    <div class="col-md-6 text-justify pr-sm-5 px-5 mr-lg-5 mt-5 mt-md-0">
+                                        <h4 class="f-large font-weight-bold py-3"><a href="https://github.com/rmarcais/holbertonschool-smiling-school-javascript" target="_blank" class="project-title pb-2">Smilling school</a></h4>
+                                        <p class="f-medium">
+                                            The last one I want to show you is a web project. We had to build a website from scratch,
+                                            based on all the HTML/ CSS/ Accessibility/ Responsive design/ Bootstrap/ Javascript knowledges we had before starting it. <em>(click on the title to see the code)</em>
+                                        </p>
+                                    </div>
+                                </div> 
+                                <div class="row justify-content-center font-weight-bold f-medium mt-3 infos-project p-sm-0 px-5">
+                                    <div class="col-sm-3 mr-4 mb-3">
+                                        <p>Languages: <span class="span-brown">HTML, Javascript, CSS</span></p>
+                                    </div>
+                                    <div class="col-sm-3 mb-4">
+                                        <div class="row">
+                                            <div class="col-lg pr-lg-2 p-0 text-right complexity">
+                                                <p>Complexity:</p>
+                                            </div>
+                                            <div class="col-lg p-0 text-left complexity">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_on.png" alt="star on">
+                                                <img src="./images/star_off.png" alt="star on">
+                                                <img src="./images/star_off.png" alt="star off">
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="col-sm-3 mt-3 mt-sm-0">
+                                        <p>Duration: <span class="span-brown">1 week</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#carouselProjects" class="carousel-control-prev pt-md-5" role="button" data-slide="prev">
+                            <img src="./images/arrow_white_left.png" alt="left" height="62px" width="30px">
+                        </a>
+                        <a href="#carouselProjects" class="carousel-control-next pt-md-5" role="button" data-slide="next">
+                            <img src="./images/arrow_white_right.png" alt="right" height="62px" width="30px">
+                        </a>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselProjects" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselProjects" data-slide-to="1"></li>
+                            <li data-target="#carouselProjects" data-slide-to="2"></li>
+                            <li data-target="#carouselProjects" data-slide-to="3"></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <!-- Skills section -->
+            <section class="section section-skills text-center font-weight-bold pt-5">
+                <div class="container-md py-5">
+                    <div id="carouselSkills" data-ride="carousel" class="carousel slide pt-5">
+                        <div class="carousel-inner text-white">
+                            <div class="carousel-item active">
+                                <div class="row border-light border-bottom mx-0 mt-4 pb-3 align-items-center">
+                                    <div class="col-6 col-sm-4 text-left p-0"><p class="f-medium m-0">Python</p></div>
+                                    <div class="col-6 col-sm-5 col-md-4 pr-0">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star off">
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-4 col-lg-2 offset-lg-2 pr-0 d-sm-block d-none"><img src="./images/logo_python.png" alt="python" width="40px"></div>
+                                </div>
+                                <div class="row border-light border-bottom mx-0 mt-4 pb-3 align-items-center">
+                                    <div class="col-6 col-sm-4 text-left p-0"><p class="f-medium m-0">Java</p></div>
+                                    <div class="col-6 col-sm-5 col-md-4 pr-0">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star off">
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-4 col-lg-2 offset-lg-2 pr-0 d-sm-block d-none"><img src="./images/java.png" alt="java" width="35px"></div>
+                                </div>
+                                <div class="row border-light border-bottom mx-0 mt-4 pb-3 align-items-center">
+                                    <div class="col-6 col-sm-4 text-left p-0"><p class="f-medium m-0">C</p></div>
+                                    <div class="col-6 col-sm-5 col-md-4 pr-0">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star off">
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-4 col-lg-2 offset-lg-2 pr-0 d-sm-block d-none"><img src="./images/c.png" alt="c" width="40px"></div>
+                                </div>
+                                <div class="row border-light border-bottom mx-0 mt-4 pb-3 align-items-center">
+                                    <div class="col-6 col-sm-4 text-left p-0"><p class="f-medium m-0">SQL</p></div>
+                                    <div class="col-6 col-sm-5 col-md-4 pr-0">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star off">
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-4 col-lg-2 offset-lg-2 pr-0 d-sm-block d-none"><img src="./images/sql.png" alt="sql" width="40px"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row border-light border-bottom mx-0 mt-4 pb-3 align-items-center">
+                                    <div class="col-6 col-sm-4 text-left p-0"><p class="f-medium m-0">HTML</p></div>
+                                    <div class="col-6 col-sm-5 col-md-4 pr-0">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star off">
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-4 col-lg-2 offset-lg-2 pr-0 d-sm-block d-none"><img src="./images/html.png" alt="html" width="40px"></div>
+                                </div>
+                                <div class="row border-light border-bottom mx-0 mt-4 pb-3 align-items-center">
+                                    <div class="col-6 col-sm-4 text-left p-0"><p class="f-medium m-0">css</p></div>
+                                    <div class="col-6 col-sm-5 col-md-4 pr-0">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star off">
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-4 col-lg-2 offset-lg-2 pr-0 d-sm-block d-none"><img src="./images/css.png" alt="css" width="35px"></div>
+                                </div>
+                                <div class="row border-light border-bottom mx-0 mt-4 pb-3 align-items-center">
+                                    <div class="col-6 col-sm-4 text-left p-0"><p class="f-medium m-0">Javascript</p></div>
+                                    <div class="col-6 col-sm-5 col-md-4 pr-0">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star off">
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-4 col-lg-2 offset-lg-2 pr-0 d-sm-block d-none"><img src="./images/js.png" alt="javascript" width="40px"></div>
+                                </div>
+                                <div class="row border-light border-bottom mx-0 mt-4 pb-3 align-items-center">
+                                    <div class="col-6 col-sm-4 text-left p-0"><p class="f-medium m-0">Git & GitHub</p></div>
+                                    <div class="col-6 col-sm-5 col-md-4 pr-0">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_on_black.png" alt="star on">
+                                        <img src="./images/star_off.png" alt="star off">
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-4 col-lg-2 offset-lg-2 pr-0 d-sm-block d-none"><img src="./images/github.png" alt="github" width="40px"></div>
+                                </div>
+                            </div>
+                            <a href="#carouselSkills" class="carousel-control-prev pt-md-5" role="button" data-slide="prev">
+                                <img src="./images/arrow_white_left.png" alt="left" height="62px" width="30px">
+                            </a>
+                            <a href="#carouselSkills" class="carousel-control-next pt-md-5" role="button" data-slide="next">
+                                <img src="./images/arrow_white_right.png" alt="right" height="62px" width="30px">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
