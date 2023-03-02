@@ -283,7 +283,7 @@ header {
 	100% {	filter: blur(0px) };
 }
 
-.section-experiences .btn.btn-primary {
+.btn.btn-primary {
     background-color: #D37E30;
     border: solid #D37E30;
     border-radius: 0;
@@ -291,11 +291,11 @@ header {
     padding: 1rem 3rem;
 }
 
-.section-experiences .btn.btn-primary:focus {
+.btn.btn-primary:focus {
     box-shadow: none !important;
 }
 
-.section-experiences .btn.btn-primary:active, .section-experiences .btn.btn-primary:hover {
+.btn.btn-primary:active, .btn.btn-primary:hover {
     background-color: white !important;
     color: #D37E30 !important;
     border: solid #D37E30 !important;
@@ -303,12 +303,12 @@ header {
     transition: 0.1s ease-in-out;
 }
 
-.section-experiences .btn.btn-primary:active {
+.btn.btn-primary:active {
     transform: scale(1);
     transition: 0.1s ease-in-out;
 }
 
-.section-experiences .btn.btn-primary.active-btn {
+.btn.btn-primary.active-btn {
     transform: translateY(-1rem), scale(1.1);;
     box-shadow: 5px 5px 5px rgb(98, 93, 93);
     background-color: white !important;
@@ -316,7 +316,7 @@ header {
     border: solid #D37E30 !important;
 }
 
-.section-experiences .btn.btn-primary.active-btn:focus {
+.btn.btn-primary.active-btn:focus {
     box-shadow: 5px 5px 5px rgb(98, 93, 93) !important;
 }
 
@@ -327,3 +327,69 @@ header {
 .experience-link:hover::before {
     width: 100%;
 }
+
+/* Section Experiences
+============================= */
+
+.section-hobbies {
+    background-color: #D37E30;
+}
+
+.section-hobbies .hobby:hover {
+    transform: scale(1.2) rotate(3deg);
+    transition: 0.2s ease-out;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem #071629;
+}
+
+/* Section Contact me
+============================= */
+
+.section-contact-me form {
+    max-width: 335px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-contact-me fieldset {
+    border: none;
+    padding: 0;
+    margin: 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.section-contact-me .form-group {
+    margin: 2.6rem 0;
+}
+
+.section-contact-me input, .section-contact-me textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 1rem;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    font-size: var(--font-size-md);
+}
+
+.section-contact-me input:required:valid {
+    border-bottom: solid 1px #08805b;
+}
+
+.section-contact-me input:required:invalid:not(:focus):not(:placeholder-shown) {
+    border-bottom: solid 1px #cd3e65;
+}
+
+.section-contact-me input:focus, .section-contact-me textarea:focus {
+    outline: none;
+}
+
+.section-contact-me input::placeholder {
+    font-size: var(--font-size-md);
+}
+
