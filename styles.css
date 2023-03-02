@@ -152,11 +152,11 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-    .main-title {
+    .section-hero .main-title {
         font-size: 5rem !important;
     }
 
-    .section-body {
+    .section-hero .section-body {
         padding: 40rem 0rem 25rem 0rem;
     }
 }
@@ -422,23 +422,3 @@ header {
        justify-content: center !important;
     }
  }
-
- /* Thank you page
-============================= */
-
-body.thank-you-page {
-    height: 100%;
-    background: url(./images/header.png);
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-body.thank-you-page main {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
