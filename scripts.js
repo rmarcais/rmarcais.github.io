@@ -45,4 +45,13 @@ $(document).ready(function () {
     showExperience("#comptacom");
     activateButton("#comptacom-btn");
 
+    function visitorsMessage() {
+        $.getJSON("https://api.countapi.xyz/hit/rmarcais.github.io/pagevisitors", function(response) {
+            const visits = response.value;
+            $("#visits").append(`You are the <span class='span-orange'> ${visits}th</span> visitor. Welcome on <span class='span-orange'>board</span> !`);
+        });
+    }
+
+    visitorsMessage();
+
 });
