@@ -152,11 +152,11 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
-    .section-hero .main-title {
+    .main-title {
         font-size: 5rem !important;
     }
 
-    .section-hero .section-body {
+    .section-body {
         padding: 40rem 0rem 25rem 0rem;
     }
 }
@@ -293,6 +293,8 @@ header {
 
 .btn.btn-primary:focus {
     box-shadow: none !important;
+    background-color: #D37E30;
+    border: solid #D37E30;
 }
 
 .btn.btn-primary:active, .btn.btn-primary:hover {
@@ -393,3 +395,50 @@ header {
     font-size: var(--font-size-md);
 }
 
+/* Footer
+============================= */
+
+.footer {
+    background: url(./images/skills.png);
+    background-position: bottom;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0 2.5rem;
+ }
+
+ .social-item span {
+    font-size: 3rem;
+ }
+
+ @media only screen and (max-width: 575px) {
+    .footer-inner {
+       justify-content: center !important;
+    }
+    .footer .logo {
+       text-align: center !important;
+    }
+    .footer ul {
+       justify-content: center !important;
+    }
+ }
+
+ /* Thank you page
+============================= */
+
+body.thank-you-page {
+    height: 100%;
+    background: url(./images/header.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.thank-you-page main {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
