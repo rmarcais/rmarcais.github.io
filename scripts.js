@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+    const mybutton = document.getElementById("top-btn");
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+    }
+
+    window.onscroll = function() {scrollFunction()};
+
     function hideExperiences() {
 
         $("#comptacom").addClass( "d-none" );
@@ -55,3 +67,8 @@ $(document).ready(function () {
     visitorsMessage();
 
 });
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
