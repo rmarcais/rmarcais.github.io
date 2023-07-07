@@ -168,6 +168,11 @@ header {
       blink-caret .65s step-end infinite;
 }
 
+.download {
+    color: #FFFFFF !important;
+    margin: 50px 0;
+}
+
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }

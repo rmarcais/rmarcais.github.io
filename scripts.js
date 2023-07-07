@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    $('#age').text(calculate_age(new Date(2003, 6, 3)) + ' yo');
+
     const mybutton = document.getElementById("top-btn");
 
     function scrollFunction() {
@@ -57,18 +59,16 @@ $(document).ready(function () {
     showExperience("#comptacom");
     activateButton("#comptacom-btn");
 
-    function visitorsMessage() {
-        $.getJSON("https://api.countapi.xyz/hit/rmarcais.github.io/pagevisitors", function(response) {
-            const visits = response.value;
-            $("#visits").append(`You are the <span class='span-orange'> ${visits}th</span> visitor. Welcome on <span class='span-orange'>board</span> !`);
-        });
-    }
-
-    visitorsMessage();
-
 });
 
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+function calculate_age(dob) { 
+    var diff_ms = Date.now() - dob;
+    var age_dt = new Date(diff_ms); 
+  
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
