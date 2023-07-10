@@ -69,6 +69,21 @@ a:hover {
    font-size: 9.6rem;
 }
 
+.btn.btn-modal {
+    font-size: 20px;
+    padding: 0;
+    padding-bottom: 1px;
+}
+
+.btn.btn-modal:hover {
+    transform: scale(1.2);
+}
+
+.fill-width {
+    width: -webkit-fill-available;
+    padding: 15px 0;
+}
+
 /* Top button
 ============================= */
 
