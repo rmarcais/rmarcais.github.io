@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre CSS</title>
+    <link rel="stylesheet" href="atelier-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Apprendre le CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="atelier.html">Retour à l'accueil</a></li>
+                <li><a href="html-learn.html">Apprendre le HTML</a></li>
+                <li><a href="challenges.html">Défis - Créez votre site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="image-humoristique" style="text-align: center;">
+        <img src="https://i.redd.it/bptzx7ur4uj11.jpg" alt="Image drôle de code" style="max-width: 100%; border-radius: 15px; margin: 20px 0; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+    </section>
+
+    <section id="qu-est-ce-que-css">
+        <h2 style="color: #ffffff;">Qu'est-ce que le CSS ?</h2>
+        <p>Le <strong>CSS</strong>, ou <strong>Cascading Style Sheets</strong> (feuilles de style en cascade), est le langage utilisé pour <strong>styliser</strong> et <strong>mettre en forme</strong> une page web. Si le <strong>HTML</strong> est la structure de la page, le <strong>CSS</strong> est ce qui permet de la rendre <strong>beau</strong>, <strong>attrayant</strong> et <strong>lisible</strong> pour l'utilisateur.</p>
+    
+        <h3 style="color: #ffffff;">Une analogie : Le CSS, c’est comme la décoration intérieure d'une maison</h3>
+        <p>Imaginez que vous avez une maison (qui représente votre site web). Le <strong>HTML</strong> est la structure de base : les murs, les fenêtres, les portes. Mais pour que la maison soit confortable et jolie, vous devez ajouter des éléments de décoration : peinture sur les murs, meubles, rideaux, etc. Ces éléments décoratifs sont comme le <strong>CSS</strong>, qui permet de personnaliser l'apparence de votre site.</p>
+    
+        <p>Avec le <strong>CSS</strong>, vous pouvez changer la couleur des éléments, la taille de la police, l'espacement entre les éléments, ajouter des bordures, des ombres, et bien plus encore !</p>
+    
+        <h3 style="color: #ffffff;">Les règles de CSS : Les instructions pour l'apparence</h3>
+        <p>Le <strong>CSS</strong> fonctionne avec des règles. Une règle CSS est comme une instruction qui dit à votre page web comment un élément doit apparaître. Par exemple, vous pouvez dire "tous les titres doivent être rouges" ou "les paragraphes doivent avoir une police de caractère plus grande".</p>
+    
+        <p>Une règle CSS est composée de deux parties :</p>
+        <ul>
+            <li><strong>Le sélecteur</strong> : Cela indique l'élément auquel la règle s'applique (par exemple, tous les titres <code>&lt;h1&gt;</code>).</li>
+            <li><strong>La déclaration</strong> : C'est ce qui définit l'apparence de l'élément (par exemple, la couleur ou la taille du texte).</li>
+        </ul>
+        <p>Par exemple, une règle CSS pourrait ressembler à ceci :</p>
+        <pre>
+    h1 {
+        color: blue;
+        font-size: 32px;
+    }
+        </pre>
+        <p>Cette règle dit que tous les titres <code>&lt;h1&gt;</code> doivent être affichés en bleu et avec une taille de police de 32 pixels.</p>
+    
+        <h3 style="color: #ffffff;">Pourquoi le CSS est-il important ?</h3>
+        <p>Sans <strong>CSS</strong>, votre site web serait un peu comme une maison sans décoration : fonctionnelle, mais peu attrayante. Le <strong>CSS</strong> est ce qui donne vie à votre site et le rend agréable à regarder. Il permet d'améliorer l'expérience de l'utilisateur en rendant la navigation plus claire et plus esthétique.</p>
+    
+        <p>En résumé, le <strong>CSS</strong> transforme un site de base en un site élégant et attrayant, tout comme la décoration transforme une maison fonctionnelle en un endroit où l'on se sent bien.</p>
+    </section>
+    
+    
+
+    <section>
+        <h2>Couleur du texte : <code>color</code></h2>
+        <p>La propriété <code>color</code> permet de changer la couleur du texte.</p>
+        <pre>
+    h1 {
+        color: #3498db; /* Applique une couleur bleue */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Changez la couleur du texte du titre principal <code>&lt;h1&gt;</code> en vert.</p>
+    </section>
+
+    <section>
+        <h2>Couleur de fond : <code>background-color</code></h2>
+        <p>La propriété <code>background-color</code> permet de définir la couleur de fond d'un élément.</p>
+        <pre>
+    body {
+        background-color: #f0f0f0; /* Applique un fond gris clair */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Changez la couleur de fond de la page (balise <code>&lt;body&gt;</code>) en bleu clair.</p>
+    </section>
+    
+    <section>
+        <h2>Marge : <code>margin</code></h2>
+        <p>La propriété <code>margin</code> permet d'ajouter de l'espace autour des éléments.</p>
+        <pre>
+    p {
+        margin: 20px; /* Applique une marge de 20px autour du paragraphe */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Ajoutez une marge de 30px autour du paragraphe de la section introduction.</p>
+    </section>
+    
+    <section>
+        <h2>Espacement intérieur : <code>padding</code></h2>
+        <p>La propriété <code>padding</code> ajoute de l'espace à l'intérieur des éléments, entre le bord et le contenu.</p>
+        <pre>
+    ul {
+        padding: 10px; /* Ajoute un espacement intérieur de 10px autour de la liste */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Ajoutez un espacement intérieur de 15px autour de la liste des étapes.</p>
+    </section>
+
+    <section>
+        <h2>Police de caractères : <code>font-family</code></h2>
+        <p>La propriété <code>font-family</code> permet de définir la police de caractères utilisée pour le texte.</p>
+        <pre>
+    h1 {
+        font-family: 'Arial', sans-serif; /* Applique la police Arial au titre */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Changez la police de la citation (balise <code>&lt;blockquote&gt;</code>) en 'Courier New'.</p>
+    </section>
+
+    <section>
+        <h2>Taille de la police : <code>font-size</code></h2>
+        <p>La propriété <code>font-size</code> permet de définir la taille du texte.</p>
+        <pre>
+    h1 {
+        font-size: 36px; /* Change la taille du titre en 36px */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Changez la taille du texte du titre <code>&lt;h1&gt;</code> à 48px.</p>
+    </section>
+
+    <section>
+        <h2>Alignement du texte : <code>text-align</code></h2>
+        <p>La propriété <code>text-align</code> permet de contrôler l'alignement du texte.</p>
+        <pre>
+    p {
+        text-align: center; /* Aligne le texte au centre */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Alignez le texte du paragraphe introductif à droite.</p>
+    </section>
+
+    <section>
+        <h2>Bordure : <code>border</code></h2>
+        <p>La propriété <code>border</code> permet de créer une bordure autour des éléments.</p>
+        <pre>
+    blockquote {
+        border: 2px solid #3498db; /* Ajoute une bordure bleue autour de la citation */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Ajoutez une bordure noire de 3px autour de la liste des étapes.</p>
+    </section>
+
+    <section>
+        <h2>Arrondir les coins : <code>border-radius</code></h2>
+        <p>La propriété <code>border-radius</code> permet de donner des coins arrondis aux éléments.</p>
+        <pre>
+    ul {
+        border-radius: 10px; /* Arrondir les coins de la liste */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Arrondissez les coins de la citation à 20px.</p>
+    </section>
+
+    <section>
+        <h2>Masquer les puces de la liste : <code>list-style-type</code></h2>
+        <p>La propriété <code>list-style-type</code> permet de modifier ou de supprimer les puces des listes.</p>
+        <pre>
+    ul {
+        list-style-type: none; /* Supprime les puces de la liste */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Supprimez les puces de la liste des étapes et mettez une couleur de fond différente pour chaque élément.</p>
+    </section>
+
+    <section>
+        <h2>Hauteur de ligne : <code>line-height</code></h2>
+        <p>La propriété <code>line-height</code> permet d'ajuster l'espace entre les lignes de texte.</p>
+        <pre>
+    p {
+        line-height: 1.8; /* Augmente l'espacement entre les lignes du paragraphe */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Augmentez l'espace entre les lignes du paragraphe introductif à 2.0.</p>
+    </section>
+
+    <section>
+        <h2>Transformation : <code>transform</code></h2>
+        <p>La propriété <code>transform</code> permet de transformer un élément en 2D ou 3D (rotation, échelle, etc.).</p>
+        <pre>
+    h1 {
+        transform: rotate(10deg); /* Tourne le titre de 10 degrés */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Faites pivoter le titre principal de 15 degrés.</p>
+    </section>
+
+    <section>
+        <h2>Ombre portée : <code>box-shadow</code></h2>
+        <p>La propriété <code>box-shadow</code> permet d'ajouter une ombre portée autour des éléments.</p>
+        <pre>
+    h1 {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Ombre légère autour du titre */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Ajoutez une ombre légère à la citation.</p>
+    </section>
+
+    <section>
+        <h2>Opacité : <code>opacity</code></h2>
+        <p>La propriété <code>opacity</code> permet de rendre un élément plus ou moins transparent.</p>
+        <pre>
+    h1 {
+        opacity: 0.8; /* Applique une opacité de 80% au titre */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Rendre la citation légèrement transparente en utilisant <code>opacity</code>.</p>
+    </section>
+
+    <section>
+        <h2>Grille CSS : <code>display: grid</code></h2>
+        <p>La propriété <code>display: grid</code> permet de créer une grille pour disposer les éléments.</p>
+        <pre>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Crée 3 colonnes égales */
+    }
+        </pre>
+        <p><strong>Consigne :</strong> Créez une grille pour afficher trois boîtes avec du texte, chacune ayant une largeur égale.</p>
+    </section>
+    
+
+    <section>
+        <h2>Mettez en pratique ce que vous avez appris !</h2>
+        <p>Vous avez ci dessous une page HTML de base. Voici les consignes pour personnaliser cette page avec du CSS :</p>
+        <ul>
+            <li><strong>Le titre principal :</strong> Mets-le en couleur bleue et change sa taille pour qu'il soit grand.</li>
+            <li><strong>Le paragraphe introductif :</strong> Change la couleur du texte en bleu clair et mets-le en italique.</li>
+            <li><strong>La liste des étapes :</strong> Affiche-la sans les puces, en utilisant une couleur de fond différente pour chaque élément.</li>
+            <li><strong>Les citations :</strong> Change leur police pour quelque chose d'extra, et ajoute une bordure autour d'elles.</li>
+        </ul>
+    </section>
+    <section class="practice-container">
+        <div class="code-area">
+            <h2>HTML : Voici le code HTML que tu dois styliser</h2>
+            <textarea id="html-code" readonly>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Histoire du HTML</title>
+</head>
+<body>
+    <h1>Qu'est-ce que le HTML ?</h1>
+    <p>Le HTML (HyperText Markup Language) est le langage utilisé pour créer la structure d'une page web. C'est lui qui permet de définir les titres, les paragraphes, les images, les liens, etc.</p>
+    <ul>
+        <li>Définir une structure</li>
+        <li>Créer des liens</li>
+        <li>Ajouter des images</li>
+        <li>Structurer du texte</li>
+    </ul>
+    <blockquote>
+        "Le HTML est la fondation de toute page web !"
+    </blockquote>
+</body>
+</html>
+            </textarea>
+        </div>
+        <div class="preview-area">
+            <h2>Prévisualisation</h2>
+            <div id="html-preview">
+                <!-- La prévisualisation du HTML sera ici -->
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>CSS : Modifie ce code pour changer le style !</h2>
+        <textarea id="css-code">
+/* Écris ici ton code CSS ! */
+
+h1 {
+    /* Changez la couleur du titre principal */
+}
+
+p {
+    /* Changez la couleur du texte et mettez-le en italique */
+}
+
+ul {
+    /* Enlevez les puces de la liste */
+}
+
+ul li {
+    /* Ajoutez un fond différent pour chaque élément de la liste */
+}
+
+blockquote {
+    /* Changez la police des citations et ajoutez une bordure */
+}
+        </textarea>
+        <button onclick="applyStyles()">Appliquer le CSS</button>
+    </section>
+    <button class="try-button" onclick="scrollToBottom()">Essayez par vous-même !</button>
+    <script>
+        function applyStyles() {
+            const cssCode = document.getElementById('css-code').value;
+            const styleSheet = document.createElement('style');
+            styleSheet.type = 'text/css';
+            styleSheet.innerText = cssCode;
+            document.head.appendChild(styleSheet);
+
+            // Injecte le code HTML pour la prévisualisation en temps réel
+            const htmlCode = document.getElementById('html-code').value;
+            document.getElementById('html-preview').innerHTML = htmlCode;
+        }
+    </script>
+    <script src="atelier-script.js"></script>
+</body>
+</html>

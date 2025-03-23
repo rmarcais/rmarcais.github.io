@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre HTML</title>
+    <link rel="stylesheet" href="atelier-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Apprendre le HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="atelier.html">Retour à l'accueil</a></li>
+                <li><a href="css-learn.html">Apprendre le CSS</a></li>
+                <li><a href="challenges.html">Défis - Créez votre site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="image-humoristique" style="text-align: center;">
+        <img src="https://i.redd.it/6b04oh0z4uca1.jpg" alt="Image drôle de code" style="max-width: 100%; border-radius: 15px; margin: 20px 0; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+    </section>
+
+    <section id="qu-est-ce-que-html">
+        <h2>Qu'est-ce que le HTML ?</h2>
+        <p>HTML, ou <strong>HyperText Markup Language</strong>, est comme la <strong>fondation</strong> ou l'<strong>ossature</strong> d'un site web. Imaginez que vous construisez une maison. HTML serait la structure de base : les murs, le toit, les fondations et la disposition générale de la maison.</p>
+    
+        <h3>Une analogie : Le HTML, c’est comme un plan de construction</h3>
+        <p>Pour construire une maison, vous avez besoin de plans qui indiquent où placer les différentes pièces : chambres, salon, cuisine, etc. De la même manière, le HTML crée un plan pour une page web en indiquant où chaque élément doit être placé.</p>
+    
+        <p>En HTML, chaque partie d'une page web (un titre, un texte, une image) est comme une pièce de la maison. Le HTML vous aide à organiser tout cela pour que tout soit à sa place et que le site soit lisible pour l'utilisateur.</p>
+    
+        <h3>Les balises HTML : Les instructions pour le navigateur</h3>
+        <p>Les balises HTML sont comme des étiquettes que l'on met sur chaque pièce de la maison. Ces étiquettes expliquent au navigateur comment chaque élément doit être présenté. Par exemple, une étiquette pourrait dire : "Cette partie est un titre", ou "Cette partie est un paragraphe de texte".</p>
+    
+        <p>Le HTML n'est pas responsable de l'apparence de votre site web (c'est le rôle du CSS). Il sert uniquement à organiser les éléments et à leur donner un sens, comme le plan de construction qui définit où chaque pièce de la maison doit se trouver.</p>
+    
+        <h3>Pourquoi le HTML est-il important ?</h3>
+        <p>Sans HTML, il n'y aurait pas de structure de base pour votre site web. Tout le contenu serait mélangé, comme si vous essayiez de vivre dans une maison sans murs ni portes. HTML organise votre contenu de manière à ce que le navigateur puisse l’afficher correctement et que l'utilisateur puisse naviguer facilement sur votre site.</p>
+        <p><strong>Découvrons à présent les différentes balises que vous allez pouvoir utiliser...</strong></p>
+    </section>
+    
+
+    <section>
+        <h2>&lt;html&gt;</h2>
+        <p>La balise <code>&lt;html&gt;</code> définit le début et la fin de la page web. C’est la balise principale qui englobe toute la structure de la page.</p>
+        <pre>&lt;html&gt; ... &lt;/html&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;head&gt;</h2>
+        <p>La balise <code>&lt;head&gt;</code> contient des informations importantes sur la page, mais qui ne sont pas visibles sur l'écran, comme le titre, les liens vers les feuilles de style, et les métadonnées.</p>
+        <pre>&lt;head&gt; ... &lt;/head&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;body&gt;</h2>
+        <p>La balise <code>&lt;body&gt;</code> englobe tout le contenu visible de la page, comme les textes, images, vidéos, et autres éléments interactifs.</p>
+        <pre>&lt;body&gt; ... &lt;/body&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;title&gt;</h2>
+        <p>La balise <code>&lt;title&gt;</code> définit le titre de la page, qui est affiché dans l'onglet du navigateur.</p>
+        <pre>&lt;title&gt;Mon super site&lt;/title&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;h1&gt; à &lt;h6&gt;</h2>
+        <p>Les balises <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code> définissent les titres, du plus important (<code>&lt;h1&gt;</code>) au moins important (<code>&lt;h6&gt;</code>).</p>
+        <pre>
+    &lt;h1&gt;Mon titre principal&lt;/h1&gt;
+    &lt;h2&gt;Sous-titre&lt;/h2&gt;
+        </pre>
+    </section>
+    
+    <section>
+        <h2>&lt;p&gt;</h2>
+        <p>La balise <code>&lt;p&gt;</code> est utilisée pour créer des paragraphes de texte.</p>
+        <pre>&lt;p&gt;Voici un exemple de paragraphe.&lt;/p&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;a&gt;</h2>
+        <p>La balise <code>&lt;a&gt;</code> permet de créer un lien cliquable vers une autre page ou un autre site web.</p>
+        <pre>&lt;a href="https://www.example.com"&gt;Cliquez ici&lt;/a&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;img&gt;</h2>
+        <p>La balise <code>&lt;img&gt;</code> permet d'ajouter une image à la page. L'attribut <code>src</code> définit le chemin de l'image, et <code>alt</code> fournit une description de l'image pour l'accessibilité.</p>
+        <pre>&lt;img src="image.jpg" alt="Description de l'image"&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;ul&gt; et &lt;ol&gt;</h2>
+        <p>Les balises <code>&lt;ul&gt;</code> (liste non ordonnée) et <code>&lt;ol&gt;</code> (liste ordonnée) permettent de créer des listes d'éléments. Les éléments de liste sont définis avec <code>&lt;li&gt;</code>.</p>
+        <pre>
+    &lt;ul&gt;
+        &lt;li&gt;Élément 1&lt;/li&gt;
+        &lt;li&gt;Élément 2&lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;ol&gt;
+        &lt;li&gt;Premier&lt;/li&gt;
+        &lt;li&gt;Deuxième&lt;/li&gt;
+    &lt;/ol&gt;
+        </pre>
+    </section>
+    
+    <section>
+        <h2>&lt;div&gt;</h2>
+        <p>La balise <code>&lt;div&gt;</code> est un élément de regroupement. Elle est utilisée pour structurer des parties du contenu de la page et appliquer des styles.</p>
+        <pre>&lt;div&gt;Contenu ici&lt;/div&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;span&gt;</h2>
+        <p>La balise <code>&lt;span&gt;</code> est utilisée pour appliquer des styles ou des modifications de manière ciblée sur une portion de texte dans une ligne, sans créer de saut de ligne.</p>
+        <pre>&lt;span&gt;Texte modifié&lt;/span&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;form&gt;</h2>
+        <p>La balise <code>&lt;form&gt;</code> permet de créer un formulaire. Elle contient des éléments comme les champs de texte, les boutons et les cases à cocher pour permettre à l'utilisateur d'envoyer des données.</p>
+        <pre>
+    &lt;form&gt;
+        &lt;input type="text" placeholder="Votre nom"&gt;
+        &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+    &lt;/form&gt;
+        </pre>
+    </section>
+    
+    <section>
+        <h2>&lt;input&gt;</h2>
+        <p>La balise <code>&lt;input&gt;</code> permet de créer des champs interactifs dans un formulaire, comme des zones de texte, des boutons radio, des cases à cocher, etc.</p>
+        <pre>&lt;input type="text" placeholder="Nom"&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;button&gt;</h2>
+        <p>La balise <code>&lt;button&gt;</code> permet de créer un bouton cliquable.</p>
+        <pre>&lt;button&gt;Cliquez-moi&lt;/button&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;strong&gt;</h2>
+        <p>La balise <code>&lt;strong&gt;</code> est utilisée pour rendre un texte <strong>important</strong> (habituellement en gras).</p>
+        <pre>&lt;strong&gt;Texte important&lt;/strong&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;em&gt;</h2>
+        <p>La balise <code>&lt;em&gt;</code> est utilisée pour mettre en évidence un texte par <em>italique</em>.</p>
+        <pre>&lt;em&gt;Texte en italique&lt;/em&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>&lt;br&gt;</h2>
+        <p>La balise <code>&lt;br&gt;</code> permet de créer un saut de ligne, utile pour formater le texte dans un paragraphe sans créer un nouveau bloc de contenu.</p>
+        <pre>&lt;p&gt;Texte avant le saut&lt;br&gt;Texte après le saut&lt;/p&gt;</pre>
+    </section>
+    
+    <section>
+        <h2>Mettez en pratique ce que vous avez appris !</h2>
+        <p>Essayez d'ajouter des balises HTML dans la section <code>&lt;body&gt;</code> ci-dessous. Vous pouvez voir immédiatement les résultats sur le côté droit !</p>
+        
+        <div class="practice-container">
+            <div class="code-area">
+                <h3>Éditez votre code HTML ici :</h3>
+                <textarea id="html-code" rows="15" cols="50">
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon Premier Site</title>
+    </head>
+    <body>
+    
+    <!-- Ajoutez votre code HTML ici, dans la balise <body> -->
+    <h1>Mon premier site web</h1>
+    <p>Bienvenue sur mon site !</p>
+    
+    </body>
+    </html>
+                </textarea>
+            </div>
+            
+            <div class="preview-area">
+                <h3>Prévisualisation :</h3>
+                <div id="html-preview">
+                    <!-- Le code HTML s'affichera ici -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="try-button" onclick="scrollToBottom()">Essayez par vous-même !</button>
+    <script src="atelier-script.js"></script>
+</body>
+</html>
